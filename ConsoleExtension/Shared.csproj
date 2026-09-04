@@ -2,13 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
-    <RootNamespace>Matriz.Backend_</RootNamespace>
+    <RootNamespace>ConsoleExtension_</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\ConsoleExtension\Shared.csproj" />
-  </ItemGroup>
 
 </Project>

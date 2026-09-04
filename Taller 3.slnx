@@ -1,3 +1,9 @@
 <Solution>
-  <Project Path="Matriz.Backend/Matriz.Backend..csproj" Id="dae993db-85f2-4ada-a17e-4b8e4953c39f" />
+  <Folder Name="/Matriz./">
+    <Project Path="Matriz.Backend/Matriz.Backend..csproj" Id="dae993db-85f2-4ada-a17e-4b8e4953c39f" />
+    <Project Path="Matriz.Fronted/Matriz.Fronted..csproj" Id="92bb7ede-afb4-468b-a0b0-84e2caff6f63" />
+  </Folder>
+  <Folder Name="/Shared./">
+    <Project Path="ConsoleExtension/Shared.csproj" Id="05870244-1331-4c0b-80cc-274a8e75baac" />
+  </Folder>
 </Solution>
