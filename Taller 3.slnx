@@ -1,5 +1,9 @@
 <Solution>
-  <Folder Name="/Matrix./">
+  <Folder Name="/Factorization.Ejercicio 35/">
+    <Project Path="Factorization.Backend/Factorization.Backend.csproj" Id="c0e53e53-5fc0-4eb8-9b07-97dfd67a9e83" />
+    <Project Path="Factorization.Fronted/Factorization.Fronted.csproj" Id="f2d7d76d-4637-4cb7-933e-224b2dde24a5" />
+  </Folder>
+  <Folder Name="/Matrix. Ejercicio 30/">
     <Project Path="Matriz.Backend/Backend.csproj" Id="dae993db-85f2-4ada-a17e-4b8e4953c39f" />
     <Project Path="Matriz.Fronted/Matriz.Fronted..csproj" Id="92bb7ede-afb4-468b-a0b0-84e2caff6f63" />
   </Folder>
