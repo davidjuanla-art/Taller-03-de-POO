@@ -2,7 +2,7 @@
 
 public class Matrix
 
-    //fields
+//fields
 {
     private int[,] matrix;
     private int orden;
@@ -10,6 +10,7 @@ public class Matrix
     //constructors
     public Matrix(int orden)
     {
+        this.orden = orden;
         matrix = new int[orden, orden];
 
         for (int i = 0; i < orden; i++)
@@ -20,7 +21,7 @@ public class Matrix
             }
         }
     }
-   
+
 
     public int[,] GetMatrix()
     {
@@ -41,7 +42,40 @@ public class Matrix
 
         return summation;
     }
+    public int GetMaximum()
+    {
+        int maximum = matrix[0, 0];
 
+        for (int i = 0; i < orden; i++)
+        {
+            for (int j = 0; j < orden; j++)
+            {
+                if (matrix[i, j] > maximum)
+                {
+                    maximum = matrix[i, j];
+                }
+            }
+        }
+        return maximum;
+    }
+
+    public int GetMinimum()
+    {
+        int minimum = matrix[0, 0];
+
+        for (int i = 0; i < orden; i++)
+        {
+            for (int j = 0; j < orden; j++)
+            {
+                if (matrix[i, j] < minimum)
+                {
+                    minimum = matrix[i, j];
+                }
+            }
+        }
+
+        return minimum;
+    }
 }
 
 
