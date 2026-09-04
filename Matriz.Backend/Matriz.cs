@@ -1,31 +1,52 @@
-﻿
-namespace Matriz.Backend_;
+﻿namespace Backend;
 
-public class Matriz
+public class Matrix
+
+    //fields
 {
-    // fields
-    private int Orden;
+    private int[,] matrix;
+    private int orden;
 
-    // constructor
-    public Matriz(int o)
+    //constructors
+    public Matrix(int orden)
     {
-        Orden1 = o;
+        matrix = new int[orden, orden];
+
+        for (int i = 0; i < orden; i++)
+        {
+            for (int j = 0; j < orden; j++)
+            {
+                matrix[i, j] = (i + 1) - j;
+            }
+        }
+    }
+   
+
+    public int[,] GetMatrix()
+    {
+        return matrix;
     }
 
-    //properties
-    public int Orden1 
-    { 
-        get => Orden; 
-        set => Orden = value; }
+    public int GetSummation()
+    {
+        int summation = 0;
+
+        for (int i = 0; i < orden; i++)
+        {
+            for (int j = 0; j < orden; j++)
+            {
+                summation += matrix[i, j];
+            }
+        }
+
+        return summation;
+    }
+
 }
 
-//public methods 
-
-for (int i = 0; )
 
 
 
-    
 
 
 

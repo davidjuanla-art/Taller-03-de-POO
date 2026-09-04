@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ConsoleExtension\Shared.csproj" />
+    <ProjectReference Include="..\Matriz.Backend\Backend.csproj" />
   </ItemGroup>
 
 </Project>
