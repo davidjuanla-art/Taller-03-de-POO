@@ -1,19 +1,30 @@
 ﻿using ConsoleExtensio;
 using Factorization.Backend;
-using System.Numerics;
 
 var answer = string.Empty;
 var options = new List<string> { "s", "n" };
 
 do
 {
-    int number = ConsoleExtension.GetInt("Enter a Number: ");
+    int number = ConsoleExtension.GetInt("Enter the number to descompose: ");
 
     Factor factor = new Factor(number);
 
-    int result = factor.Factoritation();
+    List<int> factors = factor.Factoritation();
 
-    Console.WriteLine($"Result: {result}");
+    Console.Write($"{number} = ");
+
+    for (int i = 0; i < factors.Count; i++)
+    {
+        Console.Write(factors[i]);
+
+        if (i < factors.Count - 1)
+        {
+            Console.Write(" x ");
+        }
+    }
+
+    Console.WriteLine();
 
     do
     {
